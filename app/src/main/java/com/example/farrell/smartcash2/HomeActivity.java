@@ -2,6 +2,7 @@ package com.example.farrell.smartcash2;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -98,10 +99,8 @@ public class HomeActivity extends AppCompatActivity
                     .replace(R.id.content_frame
                             , new locationFragment())
                     .commit();
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_logout) {
+             startActivity(new Intent(HomeActivity.this,LoginActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
