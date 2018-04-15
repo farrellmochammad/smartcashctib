@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
@@ -13,6 +16,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        DatabaseReference database = FirebaseDatabase.getInstance().getReference();
+        /*database.child("users").child("123").child("username").setValue("This is value");
+        database.child("users").child("456").child("username").setValue("This is value");*/
         Button btnLogin = (Button)findViewById(R.id.buttonLogin);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {

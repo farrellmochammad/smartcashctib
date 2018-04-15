@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "226027290190",
+    "firebase_url": "https://smartcash2-f8afe.firebaseio.com",
+    "project_id": "smartcash2-f8afe",
+    "storage_bucket": "smartcash2-f8afe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226027290190:android:3fea785d5d706211",
+        "android_client_info": {
+          "package_name": "com.example.farrell.smartcash2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226027290190-t13clrmakskn19f38l80cs17aiddgdg9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.farrell.smartcash2",
+            "certificate_hash": "4d114c628e3771dd0b8e4faa4560d2157048718d"
+          }
+        },
+        {
+          "client_id": "226027290190-oapqhtnn1m07143os2csi3qn3l5mi8vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeIQ3MzMpyGlLW1250Ju7J3lq3S_WoPyI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226027290190-oapqhtnn1m07143os2csi3qn3l5mi8vp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
