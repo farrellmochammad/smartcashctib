@@ -22,21 +22,42 @@ public class accountFragment extends Fragment implements View.OnClickListener {
 
     View myView;
     private Button btnPayment;
+    private Button btnmanageCard;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.account_layout,container,false);
+
         btnPayment = (Button)myView.findViewById(R.id.buttonPayment);
-        btnPayment.setOnClickListener(this);
+        btnPayment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new paymentFragment())
+                        .commit();
+            }
+        });
+
+        btnmanageCard = (Button)myView.findViewById(R.id.buttonmanageCard);
+        btnmanageCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame
+                                , new managecardFragment())
+                        .commit();
+            }
+        });
+
         return myView;
     }
 
+
     @Override
     public void onClick(View view) {
-        FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.content_frame
-                        , new paymentFragment())
-                .commit();
+
     }
 }

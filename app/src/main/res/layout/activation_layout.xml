@@ -33,4 +33,13 @@
         android:text="Your Credit"
         android:textSize="18dp"/>
 
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:text="Rp.95.000.00,-"
+        android:textSize="24dp" />
+
 </RelativeLayout>
