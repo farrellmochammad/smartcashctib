@@ -21,7 +21,7 @@
         tools:layout_editor_absoluteY="43dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/tollcard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -30,12 +30,13 @@
         app:srcCompat="@drawable/tollcard" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/shoppingcard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="108dp"
+        android:layout_alignEnd="@+id/tollcard"
+        android:layout_alignRight="@+id/tollcard"
+        android:layout_below="@+id/tollcard"
+        android:layout_marginTop="32dp"
         app:srcCompat="@drawable/shoppingcard" />
 
 </RelativeLayout>

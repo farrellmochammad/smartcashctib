@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="#FFB21E">
+
 
     <TextView
         android:id="@+id/textView3"
@@ -17,11 +19,10 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/imageView5"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="133dp"
-        android:text="Nama User"
-        android:textSize="18dp"/>
+        android:text="Chelsea Islan"
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -30,16 +31,17 @@
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="Nomor HP"
+        android:text="14045"
         android:textSize="18dp"/>
 
     <Button
         android:id="@+id/buttonmanageCard"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonPayment"
+        android:layout_alignStart="@+id/buttonPayment"
         android:layout_below="@+id/textView5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="129dp"
+        android:layout_marginTop="99dp"
         android:text="Manage Card" />
 
     <Button
@@ -50,6 +52,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="Payment" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        app:srcCompat="@drawable/ic_activation" />
 
 
 </RelativeLayout>
