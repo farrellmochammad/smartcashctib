@@ -3,6 +3,7 @@ package com.example.farrell.smartcash2;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -21,10 +22,11 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener{
 
     private FirebaseAuth mAuth;
     private Button btnlogoutAccount;
+
 
 
     @Override
@@ -42,6 +44,7 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
 
     }
 

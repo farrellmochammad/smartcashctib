@@ -3,5 +3,5 @@
     <color name="colorPrimary">#D7D7D7</color>
     <color name="colorPrimaryDark">#B5BFC2</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="appnameColor">#000000</color>
+    <color name="title_activity_home">#000000</color>
 </resources>
