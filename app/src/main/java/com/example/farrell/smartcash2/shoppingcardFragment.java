@@ -1,6 +1,9 @@
 package com.example.farrell.smartcash2;
 
+import android.app.FragmentManager;
+import android.net.sip.SipSession;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,4 +20,11 @@ public class shoppingcardFragment extends managecardFragment {
         myView = inflater.inflate(R.layout.shoppingcard_layout, container, false);
         return myView;
     }
+
+    @Override
+    public void onClick(View view) {
+        super.onClick(view);
+    }
+
+
 }

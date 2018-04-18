@@ -102,7 +102,7 @@ public class HomeActivity extends AppCompatActivity
                             , new locationFragment())
                     .commit();
         } else if (id == R.id.nav_logout) {
-             mAuth.signOut();
+             mAuth.getInstance().signOut();
              startActivity(new Intent(HomeActivity.this,LoginActivity.class));
         }
 
